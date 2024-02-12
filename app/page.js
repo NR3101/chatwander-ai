@@ -7,9 +7,9 @@ const HomePage = () => {
         <div className="max-w-md">
           <h1 className="font-bold text-6xl text-primary">ChatWander AI</h1>
           <p className="py-6 text-lg font-semibold leading-loose ">
-            ChatWander AI: Your go-to for instant answers! Explore cities tours
-            and beyond with our intuitive AI companion, delivering knowledge,and
-            providing tailored info and insights seamlessly.
+            ChatWander AI : Your go-to for instant answers! Explore cities, plan
+            tours and beyond with our intuitive AI companion, delivering
+            knowledge, and providing tailored info and insights seamlessly.
           </p>
           <Link href="/chat" className="btn btn-secondary">
             Get Started
