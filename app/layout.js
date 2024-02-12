@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "ChatWander AI",
   description:
-    "GPTGenius: Your AI language companion. Powered by OpenAI, it enhances your conversations, content creation, and more!",
+    "ChatWander AI: Your go-to for instant answers! Explore cities and beyond with our intuitive AI companion, delivering knowledge and insights seamlessly.",
 };
 
 export default function RootLayout({ children }) {
