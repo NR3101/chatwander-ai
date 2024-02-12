@@ -2,6 +2,7 @@ import TourInfo from "@/components/TourInfo";
 import Link from "next/link";
 import Image from "next/image";
 import axios from "axios";
+import prisma from "@/utils/db";
 const url = `https://api.unsplash.com/search/photos?client_id=${process.env.UNSPLASH_API_KEY}&query=`;
 
 const SingleTourPage = async ({ params }) => {
@@ -12,7 +13,7 @@ const SingleTourPage = async ({ params }) => {
   });
 
   const { data } = await axios(`${url}${tour.city}&per_page=4`);
-  const tourImages = data?.results?.map((result) => result.urls.regular );
+  const tourImages = data?.results?.map((result) => result.urls.regular);
 
   return (
     <div>

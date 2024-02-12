@@ -24,7 +24,7 @@ export const generateChatResponse = async (chatMessages) => {
       tokens: response.usage.total_tokens,
     };
   } catch (error) {
-    // console.log(error);
+    console.log(error);
     return null;
   }
 };
@@ -62,7 +62,7 @@ export const generateTourResponse = async ({ city, country }) => {
     }
     return { tour: tourData.tour, tokens: response.usage.total_tokens };
   } catch (error) {
-    // console.log(error);
+    console.log(error);
     return null;
   }
 };
