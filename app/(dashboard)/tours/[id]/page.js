@@ -24,15 +24,16 @@ const SingleTourPage = async ({ params }) => {
       {tourImages && tourImages.length > 0 ? (
         <div className="flex gap-5 justify-evenly">
           {tourImages.map((image, index) => (
-            <Image
-              key={index}
-              src={image}
-              width={180}
-              height={180}
-              className="rounded-xl shadow-xl mb-16 h-64 w-64 object-cover"
-              alt={tour.title}
-              priority
-            />
+            <div key={index} className="w-full sm:w-1/2 lg:w-1/4 p-2">
+              <Image
+                src={image}
+                width={180}
+                height={180}
+                className="rounded-xl shadow-xl mb-16 h-64 w-64 object-cover"
+                alt={tour.title}
+                priority
+              />
+            </div>
           ))}
         </div>
       ) : null}
